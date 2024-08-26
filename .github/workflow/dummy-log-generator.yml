@@ -1,0 +1,13 @@
+name: Dummy log generator
+on:
+  workflow_dispatch:
+
+jobs:
+  generate-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output some logs
+        run: |
+          echo "This is a log message"
+          echo "Here are some more log messages"
+          echo "And some more"
